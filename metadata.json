@@ -1,0 +1,8 @@
+{
+  "name": "AuraHealth - Asistente & Bienestar Premium",
+  "description": "Aplicación premium de estilo de vida saludable para iPhone con Asistente Virtual AuraHealth, tabla interactiva semanal de adherencia 80/20, control de caprichos y notificaciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
+

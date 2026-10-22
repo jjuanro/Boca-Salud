@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgBlack" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#161B28" />
+      <stop offset="100%" stop-color="#0A0C12" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E4A8" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#A98725" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#0A84FF" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Deep Black Background -->
+  <rect width="512" height="512" rx="115" fill="url(#bgBlack)" />
+  <rect width="504" height="504" x="4" y="4" rx="111" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.3" />
+
+  <!-- Outer Ring: Sapphire Blue -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#0A84FF" stroke-opacity="0.18" stroke-width="24" />
+  <circle cx="256" cy="256" r="170" fill="none" stroke="url(#blueGrad)" stroke-width="24" stroke-linecap="round" stroke-dasharray="1068" stroke-dashoffset="260" transform="rotate(-90 256 256)" filter="url(#goldGlow)" />
+
+  <!-- Inner Ring: Champagne Gold -->
+  <circle cx="256" cy="256" r="124" fill="none" stroke="#D4AF37" stroke-opacity="0.22" stroke-width="22" />
+  <circle cx="256" cy="256" r="124" fill="none" stroke="url(#goldGrad)" stroke-width="22" stroke-linecap="round" stroke-dasharray="779" stroke-dashoffset="170" transform="rotate(-90 256 256)" filter="url(#goldGlow)" />
+
+  <!-- Center Emblem: Stylized Vitality / Smile / Health Symbol in Gold & Blue -->
+  <path d="M190 240 Q256 310 322 240" fill="none" stroke="url(#goldGrad)" stroke-width="18" stroke-linecap="round" filter="url(#goldGlow)" />
+  <circle cx="256" cy="190" r="14" fill="url(#blueGrad)" />
+  <path d="M256 165 L260 178 L273 182 L260 186 L256 199 L252 186 L239 182 L252 178 Z" fill="#FFFFFF" />
+</svg>
